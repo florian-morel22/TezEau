@@ -6,9 +6,8 @@ import './assets/fonts/fonts.css';
 
 import Home from './components/Home';
 import Form from './components/Form';
-import NavBar from './components/NavBar';
-import Graph from './components/Graph';
 import DashBoard from './components/DashBoard';
+import Vote from './components/Vote';
 
 
 import {
@@ -27,12 +26,12 @@ const router = createBrowserRouter([
     element: <Form/>,
   },
   {
-    path: "/graph",
-    element: <Graph/>,
-  },
-  {
     path: "/dashBoard",
     element: <DashBoard/>,
+  },
+  {
+    path: "/vote",
+    element: <Vote/>,
   }
 ]);
 
@@ -42,7 +41,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar/>
     <RouterProvider router={router} />
   </React.StrictMode>
 );

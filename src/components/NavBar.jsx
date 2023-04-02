@@ -6,17 +6,18 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav>
-      <a
-        href="#"
+      <Link
+        to="/"
         className="nav-logo"
         aria-label="Visiter la page d'accueil de TezEau"
         aria-current="page"
       >
         <span>TezEau</span>
-      </a>
+      </Link>
 
       <div className="nav-links">
-        <a href="#">Je vote</a>
+        <Link to="/dashBoard">Dash Board</Link>
+        <Link to="/vote">Mon vote</Link>
       </div>
 
       <button className="nav-signup">Sign up</button>
