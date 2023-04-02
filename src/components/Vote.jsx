@@ -12,8 +12,8 @@ const Vote = () => {
           <span className="vote-title">Sujet du vote :</span>
           <span className="vote-sujet">Réutilisation des eaux usées</span>
           <span className="vote-idTezos">
-            L'utilisation de votre identifiant Tezos vous ne vous permettra de
-            ne voter qu'une seule fois.
+            L'utilisation de votre identifiant Tezos ne vous permettra de ne
+            voter qu'une seule fois.
           </span>
         </div>
         <div className="vote-cards">
